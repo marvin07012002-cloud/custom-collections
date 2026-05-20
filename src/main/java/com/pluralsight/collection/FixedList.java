@@ -21,10 +21,11 @@ public class FixedList<E> {
 
     public E get(int index) {
         if (index > (maxSize - 1)){
+            int maxIndex = maxSize - 1;
             throw new IndexOutOfBoundsException("This collection can't contain more than " + this.maxSize+ " items");
         }
 
-            return null;
+            return items.get(index);
     }
 
 
