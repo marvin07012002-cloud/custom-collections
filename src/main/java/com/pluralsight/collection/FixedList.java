@@ -1,12 +1,21 @@
 package com.pluralsight.collection;
 
-public class FixedList <E> {
+import java.util.ArrayList;
 
-    public E get(int index){
+public class FixedList<E> {
+    ArrayList<E> items = new ArrayList<>();
+    int maxSize;
+
+
+    public FixedList(int maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    public E get(int index) {
         return null;
     }
 
-    public void add(E item){
+    public void add(E item) {
 
     }
 }
